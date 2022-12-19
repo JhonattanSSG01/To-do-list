@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // Se importa de react para expresar que libreria vamos a usar.
+import './App.scss'; // Estilos scss
+import Container from './components/Container'; // Componente el cual abarca todo los componentes que son requeridos para construir correctamente la aplicacion.
 
+// La funcion conlleva el retrono del componente Container para su respectiva construccion en el documento HTML
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container/> {/* Componente padre */}
     </div>
   );
-}
+};
 
-export default App;
+export default App; // Exportamos el componente para poder usarlo en el componente principal (index).
